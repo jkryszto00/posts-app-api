@@ -29,6 +29,6 @@ class IndexController extends AbstractController
     {
         $this->postRepository->remove($post, true);
 
-        return $this->index();
+        return $this->redirectToRoute('app_index');
     }
 }
